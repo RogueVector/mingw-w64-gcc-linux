@@ -18,6 +18,19 @@ Configuration Summary
 
 See script for more details.
 
+Pre-reqs
+-----
+
+Texinfo
+```
+sudo apt-get install texinfo
+```
+
+libz-dev
+```
+sudo apt-get install libz-dev
+```
+
 Usage
 -----
 
@@ -43,9 +56,9 @@ After it's finished, to link to your path, run
 Where I got these tarballs
 --------------------------
 
-gcc:        http://ftp.gnu.org/gnu/gcc/gcc-7.2.0/
-binutils:   http://ftp.gnu.org/gnu/binutils/
-mingw-w64:  https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.3.tar.bz2
-gmp:        https://gmplib.org/
-mpfr:       http://www.mpfr.org/mpfr-current/
-mpc:        http://www.multiprecision.org/index.php?prog=mpc&page=download
+- gcc:        http://ftp.gnu.org/gnu/gcc/gcc-7.2.0/
+- binutils:   http://ftp.gnu.org/gnu/binutils/
+- mingw-w64:  https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.3.tar.bz2
+- gmp:        https://gmplib.org/
+- mpfr:       http://www.mpfr.org/mpfr-current/
+- mpc:        http://www.multiprecision.org/index.php?prog=mpc&page=download
