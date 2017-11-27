@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export targ="i686-w64-mingw32"
+export targ="x86_64-w64-mingw32"
 
 export MY_SYS_ROOT="$PWD/prefix"
 

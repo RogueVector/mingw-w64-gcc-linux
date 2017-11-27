@@ -10,10 +10,10 @@ path.
 Configuration Summary
 ---------------------
 
-- Targetting win32
-- gcc 4.9.3
+- Targetting win64
+- gcc 7.2.0 / mingw 5.0.3
 - Posix threads
-- sjlj exceptions
+- SEH exceptions
 - No multilib
 
 See script for more details.
@@ -43,9 +43,9 @@ After it's finished, to link to your path, run
 Where I got these tarballs
 --------------------------
 
-gcc:        http://ftp.gnu.org/gnu/gcc/gcc-4.9.3/
+gcc:        http://ftp.gnu.org/gnu/gcc/gcc-7.2.0/
 binutils:   http://ftp.gnu.org/gnu/binutils/
-mingw-w64:  http://tcpdiag.dl.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v4.0.4.tar.bz2
+mingw-w64:  https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v5.0.3.tar.bz2
 gmp:        https://gmplib.org/
 mpfr:       http://www.mpfr.org/mpfr-current/
 mpc:        http://www.multiprecision.org/index.php?prog=mpc&page=download

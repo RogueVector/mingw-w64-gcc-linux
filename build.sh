@@ -9,7 +9,7 @@
 # COLLECT_GCC=i686-w64-mingw32-g++
 # COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/4.8/lto-wrapper
 # Target: i686-w64-mingw32
-# Configured with: ../../src/configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/include' --mandir='/usr/share/man' --infodir='/usr/share/info' --sysconfdir=/etc --localstatedir=/var --libexecdir='/usr/lib/gcc-mingw-w64' --disable-maintainer-mode --disable-dependency-tracking --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --enable-version-specific-runtime-libs --enable-threads=posix --enable-fully-dynamic-string --enable-sjlj-exceptions --enable-libgomp --enable-languages=c,c++,fortran,objc,obj-c++ --enable-lto --with-plugin-ld --target=i686-w64-mingw32 --with-gxx-include-dir=/usr/include/c++/4.8 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld
+# Configured with: ../../src/configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/include' --mandir='/usr/share/man' --infodir='/usr/share/info' --sysconfdir=/etc --localstatedir=/var --libexecdir='/usr/lib/gcc-mingw-w64' --disable-maintainer-mode --disable-dependency-tracking --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --enable-version-specific-runtime-libs --enable-threads=posix --enable-fully-dynamic-string --enable-seh-exceptions --enable-libgomp --enable-languages=c,c++,fortran,objc,obj-c++ --enable-lto --with-plugin-ld --target=i686-w64-mingw32 --with-gxx-include-dir=/usr/include/c++/4.8 --with-as=/usr/bin/i686-w64-mingw32-as --with-ld=/usr/bin/i686-w64-mingw32-ld
 # Thread model: posix
 # gcc version 4.8.2 (GCC) 
 
@@ -100,7 +100,7 @@ echo "<<< MAKE GCC CORE >>>"
 cd build_gcc
 ../$GCC/configure $BINUTILS_CONFIG \
   --enable-static --enable-shared --with-system-zlib --without-included-gettext \
-  --enable-sjlj-exceptions --enable-threads=posix --enable-libstdcxx-time=yes --enable-fully-dynamic-string \
+  --enable-seh-exceptions --enable-threads=posix --enable-libstdcxx-time=yes --enable-fully-dynamic-string \
   --enable-languages=c,c++ \
   --includedir=${MY_SYS_ROOT}/include --libdir=${MY_SYS_ROOT}/lib --with-gxx-include-dir=${MY_SYS_ROOT}/include/c++/4.9 \
   --with-as=${MY_SYS_ROOT}/bin/${targ}-as --with-ld=${MY_SYS_ROOT}/bin/${targ}-ld
