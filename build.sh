@@ -102,7 +102,7 @@ cd build_gcc
   --enable-static --enable-shared --with-system-zlib --without-included-gettext \
   --enable-seh-exceptions --enable-threads=posix --enable-libstdcxx-time=yes --enable-fully-dynamic-string \
   --enable-languages=c,c++ --enable-version-specific-runtime-libs --enable-lto \
-  --enable-libstdcxx-filesystem-ts=yes --enable-bootstrap --disable-multilib --with-gnu-as --with-gnu-ld \
+  --enable-libstdcxx-filesystem-ts --enable-bootstrap --disable-multilib --with-gnu-as --with-gnu-ld \
   --includedir=${MY_SYS_ROOT}/include --libdir=${MY_SYS_ROOT}/lib --with-gxx-include-dir=${MY_SYS_ROOT}/include/c++/7.2 \
   --with-as=${MY_SYS_ROOT}/bin/${targ}-as --with-ld=${MY_SYS_ROOT}/bin/${targ}-ld
 make all-gcc -j3
