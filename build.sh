@@ -100,7 +100,7 @@ echo "<<< MAKE GCC CORE >>>"
 cd build_gcc
 ../$GCC/configure $BINUTILS_CONFIG \
   --enable-static --enable-shared --with-system-zlib --without-included-gettext \
-  --enable-seh-exceptions --enable-threads=posix --enable-libstdcxx-time=yes --enable-fully-dynamic-string \
+  --disable-sjlj-exceptions --enable-threads=posix --enable-libstdcxx-time=yes --enable-fully-dynamic-string \
   --enable-languages=c,c++ \
   --with-gnu-as --with-gnu-ld \
   --includedir=${MY_SYS_ROOT}/include --libdir=${MY_SYS_ROOT}/lib --with-gxx-include-dir=${MY_SYS_ROOT}/include/c++/7.2 \
